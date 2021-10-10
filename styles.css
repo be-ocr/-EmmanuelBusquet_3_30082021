@@ -224,6 +224,10 @@ zone fonctionnement*/
   background: white;
 }
 
+.etapes:hover i {
+  color: #9356DC;
+}
+
 
 
 /*
@@ -266,6 +270,7 @@ zone restaurants*/
   right: 20px;
   padding-right: 22px;
   padding-left: 22px;
+  color: green;
 }
 
 
@@ -568,7 +573,7 @@ restaurant & menu - page resto*/
   display: flex;
   justify-content: center;
   align-items: last baseline;
-  margin-left: 240px;
+  margin-left: 170px;
  
 }
 
@@ -669,12 +674,24 @@ zone plats - page resto*/
   transition: width 0.5s ease-in-out;
 }
 
+.bloc_menu__bloc:hover .plat_txt {
+  
+  width: calc(100% - 85px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+ 
+}
+
 
 .plat_txt{
+  display: flex;
   margin: 15px 0px 5px 15px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 15px;
+   
+  
 }
+
 .bloc_tarif {
   display: flex;
   justify-content: space-between;
@@ -820,14 +837,17 @@ h5 {
 
 a:link {
   color: white;
+ text-decoration: none;
 }
 
 a:visited {
   color: white;
+  text-decoration: none;
 }
 
 a:active {
   color: white;
+  text-decoration: none;
 
 }
 
@@ -850,6 +870,11 @@ a:active {
 
 
 @media (min-width: 530px){
+  .coeur2{
+    margin-left: 220px;
+  }
+
+
   .nom_resto {
     font-family: "Shrikhand";
     font-size: 1.45rem;
